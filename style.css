@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+*{
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px white;*/
+}
+
+body {
+    width: 99.9%;
+}
+
+.link-font {
+    font-family: 'PT Sans', sans-serif;
+    color: #003BA7;
+    font-size: 140%;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.link-font:hover {
+    text-decoration: underline;
+}
+
+.basic-font {
+    font-family: 'PT Sans', sans-serif;
+    color: #003BA7;
+    font-size: 120%;
+    font-style: normal;
+}
+
+/*Wrappers*/
+.wrapper-horizontal{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: flex-end;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-horizontal-center{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: center;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-horizontal-start{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: flex-start;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-horizontal-mail {
+    width: 25%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: center;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-vertical{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-vertical-full-screen {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.header
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/**/
+
+/*Social Icons*/
+
+div.social {
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    min-width: 300px;
+}
+
+a.social {
+    -webkit-transition: box-shadow 0.4s 0.1s linear;
+    transition: box-shadow 0.4s 0.1s linear;
+    box-shadow: 0 0 0 rgba(50, 50, 50, 0.57);
+}
+
+a.social:hover {
+    box-shadow: 0 0.75em 0.75em 0.1em rgba(50, 50, 50, 0.57);
+}
+
+a.social-fb {
+    width: 10%;
+    background: url("images/facebook.svg") no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+    padding-top: 20%;
+}
+
+a.social-vk {
+    width: 10%;
+    background: url("images/vk.svg") no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+    padding-top: 20%;
+}
+
+a.social-ok {
+    width: 10%;
+    background: url("images/odnoklassniki.svg") no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+    padding-top: 20%;
+}
+
+a.social-jj {
+    width: 10%;
+    background: url("images/livejournal.svg") no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+    padding-top: 20%;
+}
+
+/*Menu*/
+nav.menu {
+    padding-top: 2%;
+    z-index: 5;
+}
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li.menu {
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    background-color: #064DCF;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    position:relative;
+    -webkit-transition: background-color 0.2s 0.1s linear;
+    transition: background-color 0.2s 0.1s linear;
+}
+
+li.menu:hover {
+    background-color: #003BA7;
+}
+
+a.menu{
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/*Dropdown menu*/
+ul.submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+li.submenu {
+    display: none;
+    list-style: none;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    background-color: #064DCF;
+    text-align: center;
+    position:relative;
+    border-top: 0.10em solid #003BA7;
+
+    -webkit-transition: background-color 0.2s 0.1s linear;
+    transition: background-color 0.2s 0.1s linear;
+}
+
+li.submenu:hover {
+    background-color: #0b14a7;
+}
+
+li:hover > ul.submenu li {
+    display: flex;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+}
+
+a.submenu{
+    font-family: 'Roboto Slab', serif;
+    font-size: 130%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/*Mail*/
+.mail-text {
+    margin-left: 1%;
+}
+
+.mail-image-link {
+    width: 10%;
+    background: url("images/mail.svg") no-repeat;
+    background-size: contain;
+    padding-left: 10%;
+    padding-top: 15%;
+}
+
+/*Login*/
+
+div.login-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+a.login {
+    font-size: 140%;
+    padding-top: 1.5%;
+}
+
+.login-icon {
+    width: 10%;
+    background: url("images/user.svg") no-repeat;
+    background-size: contain;
+    padding-left: 8%;
+    padding-top: 13%;
+}
+
+.footer_wrapper
+{
+    height: 100vh;
+}
+
+.footer-padding-top {
+    margin-top: 0.5%;
+}
+
+
+.line {
+    width: 99.9%;
+    height: 0.75vh;
+    background: #0b14a7;
+}
+
+
+div.about {
+    background: url("images/telaviv.png")no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 62vh;
+}
+
+h1.about {
+    color: white;
+    background: url("images/indexslideshowbg.png") repeat;
+    width: 90%;
+    height: 10%;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2.1em;
+    font-family: 'Roboto Slab', serif;
+    opacity: 1;
+}
+
+/*mainpage slideshow*/
+.slideshow-element-wrapper {
+    height: 100vh;
+}
+
+.text-font-slideshow {
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 5vh;
+    font-style: normal;
+}
+
+img.slideshow-element-left {
+    display: block;
+    width: auto;
+    height: 80vh;
+    max-height: 800px;
+    z-index: 3;
+}
+
+.slideshow-element-left {
+    display: block;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-right: 2%;
+}
+
+img.slideshow-element-right {
+    display: block;
+    width: auto;
+    height: 80vh;
+    max-height: 800px;
+    margin-right: 3%;
+    z-index: 3;
+}
+
+.slideshow-element-right {
+    display: block;
+    padding-right: 10%;
+    margin-left: 3%;
+}
+
+#travel {
+    background: url("images/travelbg.png") no-repeat;
+    background-size: cover;
+}
+
+#travel-img {
+    transform: rotate(-7grad);
+}
+
+#travel-text {
+    color: white;
+    background: url("images/indexslideshowbg.png") repeat;
+    width: 90%;
+    height: 10%;
+    text-align: left;
+    margin-bottom: 13%;
+    padding: 3% 5% 7% 8%;
+    font-size: 1.9em;
+    font-family: 'Roboto Slab', serif;
+    opacity: 0.94;
+    z-index: 2;
+}
+
+#children {
+    background: url("images/childrenbg.png") no-repeat;
+    background-size: cover;
+}
+
+#children-img{
+    transform: rotate(5grad);
+}
+
+#children-text {
+    color: white;
+    background: #231F20;
+    width: 90%;
+    height: 10%;
+    text-align: left;
+    margin-bottom: 13%;
+    padding: 3% 2% 5% 8%;
+    font-size: 1.9em;
+    font-family: 'Roboto Slab', serif;
+    opacity: 0.94;
+    z-index: 2;
+}
