@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    /*border: solid 1px white;*/
+   /* border: solid 1px black;*/
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 .link-font {
     font-family: 'PT Sans', sans-serif;
     color: #003BA7;
-    font-size: 140%;
+    font-size: 1.5em;
     font-style: normal;
     text-decoration: none;
 }
@@ -27,12 +27,53 @@ body {
 .basic-font {
     font-family: 'PT Sans', sans-serif;
     color: #003BA7;
-    font-size: 120%;
+    font-size: 2%;
     font-style: normal;
+}
+
+.header-font {
+    font-family: 'Arial', sans-serif ;
+    color: #003BA7;
+    font-size: 2.5em;
+    font-style: normal;
+}
+
+.arrow-up {
+    width: 13%;
+    background: url("images/arrowup.svg") no-repeat;
+    background-size: contain;
+    padding-top: 18%;
+    padding-left: 12%;
+    margin-left: 10%;
+}
+
+.arrow-down {
+    width: 13%;
+    background: url("images/arrowdown.svg") no-repeat;
+    background-size: contain;
+    padding-top: 18%;
+    padding-left: 12%;
+    margin-left: 10%;
+}
+
+.arrow-align-center{
+    padding-left: 40%;
 }
 
 /*Wrappers*/
 .wrapper-horizontal{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: flex-end;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-horizontal-wrap{
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
@@ -69,6 +110,19 @@ body {
 }
 
 .wrapper-horizontal-mail {
+    width: 25%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: center;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-horizontal-mail-footer {
     width: 25%;
     display: flex;
     display: -webkit-flex;
@@ -251,15 +305,17 @@ a.submenu{
 
 /*Mail*/
 .mail-text {
-    margin-left: 1%;
+    margin-left: 0;
 }
 
 .mail-image-link {
-    width: 10%;
+    width: 15%;
     background: url("images/mail.svg") no-repeat;
     background-size: contain;
-    padding-left: 10%;
+    padding-left: 11%;
     padding-top: 15%;
+    min-width: 25px;
+    min-height: 5px;
 }
 
 /*Login*/
@@ -267,7 +323,7 @@ a.submenu{
 div.login-wrapper {
     display: flex;
     flex-direction: row;
-    padding-top: 2%;
+    margin-bottom: 3%;
 }
 
 a.login {
@@ -344,7 +400,7 @@ img.slideshow-element-left {
 
 .slideshow-element-left {
     display: block;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 5%;
     margin-right: 2%;
 }
@@ -360,7 +416,7 @@ img.slideshow-element-right {
 
 .slideshow-element-right {
     display: block;
-    padding-right: 10%;
+    padding-right: 3%;
     margin-left: 3%;
 }
 
@@ -379,7 +435,7 @@ img.slideshow-element-right {
     width: 90%;
     height: 10%;
     text-align: left;
-    margin-bottom: 13%;
+    margin-bottom: 17%;
     padding: 3% 5% 7% 8%;
     font-size: 1.9em;
     font-family: 'Roboto Slab', serif;
@@ -402,10 +458,120 @@ img.slideshow-element-right {
     width: 90%;
     height: 10%;
     text-align: left;
-    margin-bottom: 13%;
+    margin-bottom: 17%;
     padding: 3% 2% 5% 8%;
     font-size: 1.9em;
     font-family: 'Roboto Slab', serif;
     opacity: 0.94;
     z-index: 2;
+}
+
+#advanced {
+    background: url("images/advancedbg.png") no-repeat;
+    background-size: cover;
+}
+
+#advanced-img{
+    transform: rotate(2grad);
+}
+
+#advanced-text {
+    color: white;
+    background: #231F20;
+    width: 90%;
+    height: 10%;
+    text-align: left;
+    margin-bottom: 17%;
+    padding: 3% 2% 5% 10%;
+    font-size: 1.9em;
+    font-family: 'Roboto Slab', serif;
+    opacity: 0.94;
+    z-index: 2;
+}
+
+/*news*/
+#news {
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+#news-header {
+    text-align: center;
+}
+
+/*news filter*/
+
+.news-filter {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    position: relative;
+    width: 2%;
+    height: 4vh;
+    border: 2px solid #003BA7;
+    border-radius: 6px;
+}
+
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.label {
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 0.5%;
+}
+
+.controls-container {
+    margin-left: 4%;
+}
+
+.controls-container:first-child {
+    margin-left: 2%;
+}
+
+.checkbox + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    background: #003BA7;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+    opacity: 0;
+
+    -webkit-transition: opacity 0.1s 0.1s linear;
+    transition: opacity 0.1s 0.1s linear;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    background: #003BA7;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+    opacity: 1;
+
+    -webkit-transition: opacity 0.09s 0.1s linear;
+    transition: opacity 0.09s 0.1s linear;
 }
