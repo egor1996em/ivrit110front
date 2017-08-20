@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
+<header>
+    <div class="header">
     <div class="wrapper-horizontal">
-        <a href="index.html"><img src="images/logo.png"/></a>
+        <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
         <div class="wrapper-horizontal-mail">
             <a href="#" class="mail-image-link"></a>
             <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
@@ -29,7 +30,7 @@
     <nav class="menu">
         <ul class="menu">
             <li class="menu"><a href = "#" class="menu">Главная</a></li>
-            <li class="menu"><a href = "#" class="menu">Нововсти</a></li>
+            <li class="menu"><a href = "#" class="menu">Новости</a></li>
             <li class="menu"><a href = "#" class="menu">Учебники</a>
                 <ul class="submenu">
                     <li class="submenu"><a href = "#" class="submenu">Начинающим</a></li>
@@ -41,45 +42,134 @@
             </li>
         </ul>
     </nav>
+    </div>
 </header>
-<section class="wrapper-vertical-full-screen">
-    <div id="news">
-        <div id="news-header">
-            <h1 id="news-header-text" class="header-font">Новости</h1>
-            <div class="news-filter">
-                <label class="controls-container">
-                    <input type="checkbox" class="checkbox" name="news-checkbox" />
-                    <span class="checkbox-custom"></span>
-                    <span class="label">Новости</span>
-                </label>
-                <label class="controls-container">
-                    <input type="checkbox" class="checkbox" name="article-checkbox" />
-                    <span class="checkbox-custom"></span>
-                     <span class="label">Статьи</span>
-                </label>
-                <label class="controls-container">
-                     <input type="checkbox" class="checkbox" name="anonce-checkbox" />
-                     <span class="checkbox-custom"></span>
-                    <span class="label">Анонсы</span>
-                </label>
+<section>
+    <div class="wrapper-vertical-full-screen">
+        <div class="container">
+            <div id="news-header">
+                <h1 class="header-font page-title-align-center">Новости</h1>
+                <div class="news-filter">
+                    <label class="controls-container">
+                        <input type="checkbox" class="checkbox" name="news-checkbox" checked/>
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Новости</span>
+                    </label>
+                    <label class="controls-container">
+                        <input type="checkbox" class="checkbox" name="article-checkbox" />
+                        <span class="checkbox-custom"></span>
+                         <span class="label">Статьи</span>
+                    </label>
+                    <label class="controls-container">
+                         <input type="checkbox" class="checkbox" name="anonce-checkbox" />
+                         <span class="checkbox-custom"></span>
+                        <span class="label">Анонсы</span>
+                    </label>
+                </div>
+                <hr class="line">
+                <div class="wrapper-horizontal">
+                    <div class="news-column">
+                        <article>
+                            <div class="news-block">
+
+                                <a href="#" class="news-block-pic-link"><img src="images/camera.svg" alt="Нет изображения к новости" class="news-block-image-stub" ></a>
+                                <h2>
+                                    <a class="news-block-header" href="#">Перерождение Иврит 110 в самом разгаре</a>
+                                </h2>
+                                <h3 class="news-block-description">Наш портал координально изменился чтобы стать лучше и современнее. Подробнее под катом.</h3>
+                                <a href="#" class="news-block-link">Читать далее...</a>
+                                <a href="#" class="news-block-tag">Новости</a>
+                                <time class="news-block-time" datetime="2017-09-01"> 01 Сентября 2017</time>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="news-block">
+
+                                <a href="#" class="news-block-pic-link"><img src="images/camera.svg" alt="Нет изображения к новости" class="news-block-image-stub"></a>
+                                <h2>
+                                    <a class="news-block-header" href="#">Перерождение Иврит 110 в самом разгаре</a>
+                                </h2>
+                                <h3 class="news-block-description">Наш портал координально изменился чтобы стать лучше и современнее. Подробнее под катом.</h3>
+                                <a href="#" class="news-block-link">Читать далее...</a>
+                                <a href="#" class="news-block-tag">Новости</a>
+                                <time class="news-block-time" datetime="2017-09-01"> 01 Сентября 2017</time>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="news-column">
+                        <article>
+                            <div class="news-block">
+
+                                <a href="#" class="news-block-pic-link"><img src="images/camera.svg" alt="Нет изображения к новости" class="news-block-image-stub" ></a>
+                                <h2>
+                                    <a class="news-block-header" href="#">Перерождение Иврит 110 в самом разгаре</a>
+                                </h2>
+                                <h3 class="news-block-description">Наш портал координально изменился чтобы стать лучше и современнее. Подробнее под катом.</h3>
+                                <a href="#" class="news-block-link">Читать далее...</a>
+                                <a href="#" class="news-block-tag">Новости</a>
+                                <time class="news-block-time" datetime="2017-09-01"> 01 Сентября 2017</time>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="news-block">
+
+                                <a href="#" class="news-block-pic-link"><img src="images/camera.svg" alt="Нет изображения к новости" class="news-block-image-stub" ></a>
+                                <h2>
+                                    <a class="news-block-header" href="#">Перерождение Иврит 110 в самом разгаре</a>
+                                </h2>
+                                <h3 class="news-block-description">Наш портал координально изменился чтобы стать лучше и современнее. Подробнее под катом.</h3>
+                                <a href="#" class="news-block-link">Читать далее...</a>
+                                <a href="#" class="news-block-tag">Новости</a>
+                                <time class="news-block-time" datetime="2017-09-01"> 01 Сентября 2017</time>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="news-column">
+                        <article>
+                            <div class="news-block">
+
+                                <a href="#" class="news-block-pic-link"><img src="images/camera.svg" alt="Нет изображения к новости" class="news-block-image-stub" ></a>
+                                <h2>
+                                    <a class="news-block-header" href="#">Перерождение Иврит 110 в самом разгаре</a>
+                                </h2>
+                                <h3 class="news-block-description">Наш портал координально изменился чтобы стать лучше и современнее. Подробнее под катом.</h3>
+                                <a href="#" class="news-block-link">Читать далее...</a>
+                                <a href="#" class="news-block-tag">Новости</a>
+                                <time class="news-block-time" datetime="2017-09-01"> 01 Сентября 2017</time>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="news-block">
+                                <a href="#" class="news-block-pic-link"><img src="images/camera.svg" alt="Нет изображения к новости" class="news-block-image-stub"></a>
+                                <h2>
+                                    <a class="news-block-header" href="#">Перерождение Иврит 110 в самом разгаре</a>
+                                </h2>
+                                <h3 class="news-block-description">Наш портал координально изменился чтобы стать лучше и современнее. Подробнее под катом.</h3>
+                                <a href="#" class="news-block-link">Читать далее...</a>
+                                <a href="#" class="news-block-tag">Новости</a>
+                                <time class="news-block-time" datetime="2017-09-01"> 01 Сентября 2017</time>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <hr class="line">
         </div>
     </div>
-
 </section>
-<footer class="footer_wrapper">
+<footer>
     <hr class="line">
-    <div class="wrapper-horizontal-start ">
-        <div class="social footer-padding-top">
-            <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
-            <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
-            <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
-            <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
-        </div>
-        <div class="wrapper-horizontal-mail-footer">
-            <a href="#" class="mail-image-link"></a>
-            <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+    <div class="footer_wrapper">
+        <div class="wrapper-horizontal-start ">
+            <div class="social footer-padding-top">
+                <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
+                <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
+                <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
+                <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
+            </div>
+            <div class="wrapper-horizontal-mail-footer">
+                <a href="#" class="mail-image-link"></a>
+                <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+            </div>
         </div>
     </div>
 </footer>
