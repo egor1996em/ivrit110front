@@ -5,12 +5,13 @@
 *{
     margin: 0;
     padding: 0;
-   /* border: solid 1px black;*/
+    /**/
 }
 
 body {
     width: 100%;
     height: 100%;
+    max-width: 1980px;
 }
 
 .link-font {
@@ -377,7 +378,7 @@ h1.about {
 
 /*mainpage slideshow*/
 .slideshow-element-wrapper {
-    height: 101vh;
+    height: 102vh;
 }
 
 .text-font-slideshow {
@@ -417,6 +418,17 @@ img.slideshow-element-right {
     margin-right: 2vw;
 }
 
+.slide-link {
+    color: white;
+    font-size: 1.8vw;
+    width: 100%;
+    padding-left: 65%;
+}
+
+.slide-link:hover {
+    text-decoration: none;
+}
+
 #travel {
     background: url("images/travelbg.png") no-repeat;
     background-size: cover;
@@ -424,6 +436,9 @@ img.slideshow-element-right {
 
 #travel-img {
     transform: rotate(5grad);
+    background: url("images/travels.png") no-repeat;
+    background-size: contain;
+    padding: 33vh;
 }
 
 #travel-text {
@@ -446,12 +461,15 @@ img.slideshow-element-right {
 
 #single-img {
     transform: rotate(-3grad);
+    background: url("images/single.png") no-repeat;
+    background-size: contain;
+    padding: 33vh;
 }
 
 #single-text {
     color: white;
     background: url("images/indexslideshowbg.png") repeat;
-    width: 90%;
+    width: 80%;
     text-align: left;
     margin-bottom: 17%;
     padding: 3% 5% 7% 8%;
@@ -468,6 +486,9 @@ img.slideshow-element-right {
 
 #children-img{
     transform: rotate(5grad);
+    background: url("images/children.png") no-repeat;
+    background-size: contain;
+    padding: 33vh;
 }
 
 #children-text {
@@ -490,6 +511,9 @@ img.slideshow-element-right {
 
 #advanced-img{
     transform: rotate(2grad);
+    background: url("images/advanced.png") no-repeat;
+    background-size: contain;
+    padding: 33vh;
 }
 
 #advanced-text {
@@ -512,6 +536,9 @@ img.slideshow-element-right {
 
 #beginner-img{
     transform: rotate(5grad);
+    background: url("images/beginners.png") no-repeat;
+    background-size: contain;
+    padding: 33vh;
 }
 
 #beginner-text {
@@ -737,11 +764,117 @@ a.news-block-tag:hover {
     margin-top: 3vh;
 }
 
-.book {
+.book-container{
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+}
+
+.book-categories {
     display: block;
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    width: 98%;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
     padding: 0 1% 0 1%;
 }
 
+.book-category {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-left: 8vw;
+    padding-top: 10vh;
+}
+
+.book-category-image{
+    display: block;
+    position: relative;
+    padding: 17vw;
+}
+
+#beginner-category-img{
+    background: url("images/beginners.png") no-repeat;
+    background-size: contain;
+}
+
+#advanced-category-img{
+    background: url("images/advanced.png") no-repeat;
+    background-size: contain;
+}
+
+#children-category-img{
+    background: url("images/children.png") no-repeat;
+    background-size: contain;
+}
+
+#single-category-img{
+    background: url("images/single.png") no-repeat;
+    background-size: contain;
+}
+
+#travel-category-img{
+    background: url("images/travels.png") no-repeat;
+    background-size: contain;
+}
+
+a.book-link{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin-top: 2.3vh;
+}
+.books-list-container{
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+}
+
+.book-page-container{
+    margin-top: 10vh;
+}
+
+.book-info-container{
+    width: 45%;
+}
+
+.book-cover{
+    padding-top: 43vw;
+    padding-left: 65vh;
+    margin-left: 5vw;
+    border: solid 0.025vw black;
+}
+
+.book-name{
+    font-family: 'Arial', sans-serif ;
+    color: #003BA7;
+    font-size: 2.7vw;
+    font-style: normal;
+}
+
+.book-authors{
+    font-family: 'Arial', sans-serif ;
+    color: black;
+    font-size: 2.4vw;
+    font-style: normal;
+    margin-top: 2vh;
+}
+
+.book-year{
+    font-family: 'Arial', sans-serif ;
+    color: black;
+    font-size: 2.1vw;
+    font-style: normal;
+    margin-top: 2vh;
+}
+
+.book-description{
+    font-family: 'Arial', sans-serif ;
+    color: black;
+    font-size: 1.9vw;
+    font-style: normal;
+    margin-top: 2vh;
+    width: 65%;
+}
+
+.book-page-link{
+    margin-top: 2vh;
+    padding-left: 35%;
+}

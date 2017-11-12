@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>IVRIT110 - Главная</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidemenu.css">
+    <link rel="stylesheet" href="font-awesome.css">
 </head>
 <body>
 <header>
@@ -45,49 +47,65 @@
     </div>
 </header>
 <section>
+    <nav id="sidebar-menu">
+        <ul>
+            <li>
+                <a id="scrollup"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a id="scrolldown"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </nav>
     <div class="wrapper-vertical-full-screen">
        <div class="about">
         <h1 class="about"><b>Иврит 110</b> - ваш путеводитель в мире иврита</h1>
        </div>
         <div id="beginner" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <img id="beginner-img" src="images/beginners.png" class="slideshow-element-left" alt="Картинка отсутствует">
+            <div id="beginner-img" class="slideshow-element-left" ></div>
             <div class="wrapper-vertical">
                 <div id="beginner-text-wrapper">
                     <p id="beginner-text" class="text-font-slideshow">
-                        Для начинающих изучение языка иврит
-                    </p></div>
+                        Для начинающих изучение языка иврит <br> <br>
+                        <a href="" class="slide-link">Узнайте больше</a>
+                    </p>
+                </div>
             </div>
         </div>
         <div id="advanced" class="slideshow-element-wrapper wrapper-horizontal-center" >
             <div class="wrapper-vertical">
                 <div id="advanced-text-wrapper">
                     <p id="advanced-text" class="text-font-slideshow">
-                    Для самых любопытных знатоков языка иврит
+                    Для самых любопытных знатоков языка иврит <br> <br>
+                        <a href="" class="slide-link">Узнайте больше</a>
                 </p></div>
             </div>
-            <img id="advanced-img" src="images/advanced.png" class="slideshow-element-left" alt="Картинка отсутствует">
+            <div id="advanced-img" class="slideshow-element-left" ></div>
         </div>
         <div id="children" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <img id="children-img" src="images/children.png" class="slideshow-element-right" alt="Картинка отсутствует">
+            <div id="children-img" class="slideshow-element-right" ></div>
             <div class="wrapper-vertical">
             <div id="children-text-wrapper"><p id="children-text" class="text-font-slideshow">
-                Для самых юных или ярых фанатов языка иврит
+                Для самых юных или ярых фанатов языка иврит <br> <br>
+                <a href="" class="slide-link">Узнайте больше</a>
             </p></div>
             </div>
         </div>
         <div id="single" class="slideshow-element-wrapper wrapper-horizontal-center" >
             <div class="wrapper-vertical">
                 <div id="single-text-wrapper"><p id="single-text" class="text-font-slideshow">
-                    Для любителей самостоятельных свершений в изучении языков
+                    Для любителей самостоятельных свершений в изучении языков <br> <br>
+                    <a href="" class="slide-link">Узнайте больше</a>
                 </p></div>
             </div>
-            <img id="single-img" src="images/single.png" class="slideshow-element-left" alt="Картинка отсутствует">
+            <div id="single-img" class="slideshow-element-left"></div>
         </div>
         <div id="travel" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <img id="travel-img" src="images/travels.png" class="slideshow-element-left" alt="Картинка отсутствует">
+            <div id="travel-img" class="slideshow-element-left" ></div>
             <div class="wrapper-vertical">
             <div id="travel-text-wrapper"><p id="travel-text" class="text-font-slideshow">
-                Для тех, кто едет в Израиль и не хочет чувствовать себя чужим в Стране
+                Для тех, кто едет в Израиль и не хочет чувствовать себя чужим в Стране <br> <br>
+                <a href="" class="slide-link">Узнайте больше</a>
             </p></div>
         </div>
         </div>
@@ -96,7 +114,7 @@
 <footer>
     <div class="line">
     </div>
-    <div class="footer_wrapper">
+    <div class="footer footer_wrapper">
         <div class="wrapper-horizontal-start">
             <div class="social footer-padding-top">
                 <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
@@ -111,6 +129,7 @@
         </div>
     </div>
 </footer>
-    <!--<script src="js/mainpage.js"></script>-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

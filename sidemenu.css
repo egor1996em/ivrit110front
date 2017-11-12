@@ -1,0 +1,78 @@
+#sidebar-menu {
+    position: fixed; /* фиксируем наше меню */
+    top: 46vh; /* положение меню относительно верхнего края браузера */
+    left: 0; /* прилипили меню к левому краю */
+    padding: 2.3vh;
+    background: #231F20;
+    color: #FFF;
+    border-radius: 0 8px 8px 0;
+    opacity: 0.30;
+    z-index:30;
+    -webkit-transition: opacity 0.3s 0.2s linear;
+    transition: opacity 0.3s 0.2s linear;
+}
+
+#sidebar-menu:hover{
+    opacity: 1;
+    -webkit-transition: opacity 0.2s 0.1s linear;
+    transition: opacity 0.2s 0.1s linear;
+}
+
+#sidebar-menu li {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+}
+#sidebar-menu li i {
+    /* Задаем иконкам фиксированный размер, height и line-height должны быть одинаковыми */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#sidebar-menu li+li {margin-top: 4px;}
+#sidebar-menu b {
+    display: none;
+    position: absolute;
+    /* позиция относительно левого края равна ширине эл-та li */
+    left: 27px;
+    top: 0;
+    height: 27px;
+    /* ширина равна зазору между блоком меню и подменю */
+    width: 16px;
+    line-height: 27px;
+    background: transparent;
+    color: #323A45;
+    /* саму иконку позиционируем вправо, чтобы визуально она смотрелась вместе с блоком подменю */
+    text-align: right;
+}
+
+#sidebar-menu li > ul {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 42px;
+    width: 120px;
+    padding: 10px;
+    background: #323A45;
+    border-radius: 8px;
+}
+#sidebar-menu li:hover b,
+#sidebar-menu li:hover ul {display: block;}
+#sidebar-menu li a {
+    display: block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #FFF;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+#sidebar-menu li a:hover {
+    display: block;
+    background: #003BA7;
+}
