@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IVRIT110 - Учебники</title>
+    <title>IVRIT110 - {Название учебника}</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -58,54 +58,40 @@
     </div>
     <div id="overlay"></div>
 </header>
-<section>
-    <div class="wrapper-vertical-full-screen">
-        <div class="book-container">
-            <h1 class="header-font page-title-align-center">Учебники</h1>
-            <div class="book-categories">
-                <div class="book-category">
-                    <a id="beginner-category-img" class="book-category-image" href="#"></a>
-                    <a class="book-link link-font" href="#">Начинающим</a>
+    <section>
+        <div class="wrapper-vertical-full-screen books-list-container">
+            <h1 class="header-font page-title-align-center">Иврит Бэ-рацон</h1>
+            <div id="ivritberazon" class="wrapper-horizontal-start book-page-container">
+                <a class="book-cover"></a>
+                <div class="wrapper-vertical book-info-container">
+                    <span class="book-authors">Лерер И.И. <br> Животовский И.Г.</span>
+                    <span class="book-year"><i class="fa fa-calendar-o book-icon-left" aria-hidden="true"></i>2009</span>
+                    <p class="book-description">Учебник для начинающих изучать иврит.
+                        Он рассчитан на русскоязычную аудиторию. Главная его особенность — возможность самостоятельно изучать язык с минимальным участием преподавателя.</p>
                 </div>
-                <div class="book-category">
-                    <a id="advanced-category-img" class="book-category-image" href="#"></a>
-                    <a class="book-link link-font" href="#">Продвинутым</a>
-                </div>
-                <div class="book-category">
-                    <a id="children-category-img" class="book-category-image" href="#"></a>
-                    <a class="book-link link-font" href="#">Детям</a>
-                </div>
-                <div class="book-category">
-                    <a id="single-category-img" class="book-category-image" href="#"></a>
-                    <a class="book-link link-font" href="#">Самостоятельным</a>
-                </div>
-                <div class="book-category">
-                    <a id="travel-category-img" class="book-category-image" href="#"></a>
-                    <a class="book-link link-font" href="#">Путешественникам</a>
-                </div>
-            </div>
             </div>
         </div>
-    </div>
-</section>
-<footer>
-    <div class="line"></div>
-    <div class="footer_wrapper">
-        <div class="wrapper-horizontal-start ">
-            <div class="social footer-padding-top">
-                <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
-                <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
-                <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
-                <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
-            </div>
-            <div class="wrapper-horizontal-mail-footer">
-                <a href="#" class="mail-image-link"></a>
-                <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+    </section>
+    <footer>
+        <div class="line"></div>
+        <div class="footer_wrapper">
+            <div class="wrapper-horizontal-start ">
+                <div class="social footer-padding-top">
+                    <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
+                    <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
+                    <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
+                    <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
+                </div>
+                <div class="wrapper-horizontal-mail-footer">
+                    <a href="#" class="mail-image-link"></a>
+                    <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="js/jQuery.js"></script>
-<script src="js/modalform.js"></script>
+    </footer>
+    <link rel="stylesheet" href="font-awesome.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/bookCoverLoader.js"></script>
+    <script src="js/modalform.js"></script>
 </body>
 </html>

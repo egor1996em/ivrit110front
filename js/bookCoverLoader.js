@@ -1,25 +1,19 @@
 $(document).ready(function (e) {
-    setPicturesToBooks();
+    setBookPicture();
 });
 
 //id контейнера - назвние картинки учебника и его идентификация на странице
-function setPicturesToBooks(){
-    var booksOnPage = $('.book-page-container');
-
-    for (var i = 0; i < booksOnPage.length; i++){
-        var book = $(booksOnPage[i]);
+function setBookPicture(){
+        var book = $('.book-page-container');
         var windowWidth = $(window).width();
         var directoryName;
         var URL;
         if (windowWidth > 1199){
-            directoryName = "large";
+        directoryName = "large";
         }
-
         URL = createURLtoBookImage(directoryName, $(book).attr("id"));
         $(book).children('.book-cover').attr('style', 'background: url("' + URL + '") no-repeat; ' +
-            'background-size: contain;');
-    }
-
+        'background-size: contain;');
 }
 
 function createURLtoBookImage(directoryName, filename) {

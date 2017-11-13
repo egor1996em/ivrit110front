@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IVRIT110 - {Название категории}</title>
+    <title>IVRIT110 - Регистрация</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -59,31 +59,58 @@
     <div id="overlay"></div>
 </header>
     <section>
-        <div class="wrapper-vertical-full-screen books-list-container">
-            <h1 class="header-font page-title-align-center">Начинающим</h1>
-            <div id="ivritberazon" class="wrapper-horizontal-start book-page-container">
-                <a class="book-cover"></a>
-                <div class="wrapper-vertical book-info-container">
-                    <h2 class="book-name"><a class="book-header-link" href="">ИВРИТ БЭ-РАЦОН</a></h2>
-                    <span class="book-authors">Лерер И.И. <br> Животовский И.Г.</span>
-                    <span class="book-year"><i class="fa fa-calendar-o book-icon-left" aria-hidden="true"></i>2009</span>
-                    <p class="book-description">Учебник для начинающих изучать иврит.
-                        Он рассчитан на русскоязычную аудиторию. Главная его особенность — возможность самостоятельно изучать язык с минимальным участием преподавателя.</p>
-                    <a href="#" class="link-font book-page-link">Узнать больше</a>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div id="ivritfullcourse" class="wrapper-horizontal-start book-page-container">
-                <a class="book-cover"></a>
-                <div class="wrapper-vertical book-info-container">
-                    <h2 class="book-name">ИВРИТ. ПОЛНЫЙ КУРС</h2>
-                    <span class="book-authors">Лерер И.И.</span>
-                    <span class="book-year"><i class="fa fa-calendar-o book-icon-left" aria-hidden="true"></i>2017</span>
-                    <p class="book-description">
-                        Данный курс предназначен для начинающих изучать иврит. Учебник состоит из 5 частей, позволяющих овладеть навыками чтения и письма, усвоить правила грамматики, познакомиться с особенностями частей речи, приобрести большой лексический запас слов и выражений, овладеть навыками разговорной речи.
-                    </p>
-                    <a href="#" class="link-font book-page-link">Узнать больше</a>
-                </div>
+        <div class="wrapper-vertical">
+            <h1 class="header-font page-title-align-center">Регистрация</h1>
+            <div class="wrapper-horizontal-start registration">
+                    <form class="registration-form">
+                        <label class="input-label">Имя пользователя:</label>
+                        <input type="text" id="login-field" class="text-input"><br>
+                        <span id="login-field-validation-msg" class="validation-msg"></span>
+
+                        <label class="input-label">Пароль:</label>
+                        <input type="password" id="password-field" class="text-input"><br>
+                        <span id="password-field-validation-msg" class="validation-msg"></span>
+
+                        <label class="input-label">Повторите праоль:</label>
+                        <input type="text" id="repeat-passport-field" class="text-input"><br>
+                        <span id="repeat-passport-validation-msg" class="validation-msg"></span>
+
+                        <label class="input-label">Электронная почта:</label>
+                        <input type="email" id="mail-field" class="text-input"><br>
+                        <span id="mail-validation-msg" class="validation-msg"></span>
+
+                        <button id="Registration-action" class="form-button">Зарегистрироваться</button>
+                    </form>
+                    <div class="hints">
+                            <div class="hint-container">
+                                <p class="hint-text">
+                                    <ol>
+                                        <li class="hint-text">Имя пользователя должно быть длиннее 6 символов</li>
+                                        <li class="hint-text">В имени могут содержаться:
+                                            <ul>
+                                                <li class="hint-text">Латинские буквы (A-Z, a-z)</li>
+                                                <li class="hint-text">Цифры (1-0)</li>
+                                                <li class="hint-text">Специальные символы (!@#$%&*)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </p>
+                        </div>
+                        <div class="hint-container">
+                            <p class="hint-text">
+                            <ol>
+                                <li class="hint-text">Пароль должен быть не меньше 8 символов</li>
+                                <li class="hint-text">Пароль может состоять из:
+                                    <ul>
+                                        <li class="hint-text">Латинские буквы (A-Z, a-z)</li>
+                                        <li class="hint-text">Цифры (1-0)</li>
+                                        <li class="hint-text">Специальные символы (!@#$%&*)</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -104,9 +131,7 @@
             </div>
         </div>
     </footer>
-    <link rel="stylesheet" href="font-awesome.css">
     <script src="js/jQuery.js"></script>
-    <script src="js/categorybookslist.js"></script>
     <script src="js/modalform.js"></script>
 </body>
 </html>

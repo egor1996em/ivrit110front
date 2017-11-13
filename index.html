@@ -8,128 +8,143 @@
     <link rel="stylesheet" href="font-awesome.css">
 </head>
 <body>
-<header>
-    <div class="header">
-        <div class="wrapper-horizontal">
-            <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
-            <div class="wrapper-horizontal-mail">
-                <a href="#" class="mail-image-link"></a>
-                <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+    <header>
+        <div class="header">
+            <div class="wrapper-horizontal">
+                <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
+                <div class="wrapper-horizontal-mail">
+                    <a href="#" class="mail-image-link"></a>
+                    <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+                </div>
+                <div class="wrapper-vertical">
+                    <div class="social">
+                        <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
+                        <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
+                        <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
+                        <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
+                    </div>
+                    <div class="login-wrapper">
+                        <a href="#" id="login-form-icon" class="login-icon"></a>
+                        <a href="#" id="login-form" class="link-font login">Регистрация / вход</a>
+                    </div>
+                </div>
             </div>
-            <div class="wrapper-vertical">
-                <div class="social">
+            <nav class="menu">
+                <ul class="menu">
+                    <li class="menu"><a href = "#" class="menu">Главная</a></li>
+                    <li class="menu"><a href = "#" class="menu">Новости</a></li>
+                    <li class="menu"><a href = "#" class="menu">Учебники</a>
+                        <ul class="submenu">
+                            <li class="submenu"><a href = "#" class="submenu">Начинающим</a></li>
+                            <li class="submenu"><a href = "#" class="submenu">Продвинутым</a></li>
+                            <li class="submenu"><a href = "#" class="submenu">Детям</a></li>
+                            <li class="submenu"><a href = "#" class="submenu">Самостоятельным</a></li>
+                            <li class="submenu"><a href = "#" class="submenu">Путешественникам</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="modal_form">
+            <span class="modal_close modal_form_element"></span>
+            <span class="modal_header">Вход</span>
+            <form id="login" name="login" class="login-form modal_form_element">
+                <label class="input-label">Логин</label>
+                <input id="login-input" type="text" class="text-input" name="login-input">
+                <span id="login-validation-msg" class="validation-msg"></span>
+                <label class="input-label">Пароль</label>
+                <input id="password-input" type="password" class="text-input" name="password-input">
+                <span id="password-validation-msg" class="validation-msg"></span>
+                <button id="login-action" class="form-button">Войти</button>
+            </form>
+        </div>
+        <div id="overlay"></div>
+    </header>
+    <section>
+        <nav id="sidebar-menu">
+            <ul>
+                <li>
+                    <a id="scrollup"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a id="scrolldown"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="wrapper-vertical-full-screen">
+           <div class="about">
+            <h1 class="about"><b>Иврит 110</b> - ваш путеводитель в мире иврита</h1>
+           </div>
+            <div id="beginner" class="slideshow-element-wrapper wrapper-horizontal-center" >
+                <div id="beginner-img" class="slideshow-element-left" ></div>
+                <div class="wrapper-vertical">
+                    <div id="beginner-text-wrapper">
+                        <p id="beginner-text" class="text-font-slideshow">
+                            Для начинающих изучение языка иврит <br> <br>
+                            <a href="" class="slide-link">Узнайте больше</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="advanced" class="slideshow-element-wrapper wrapper-horizontal-center" >
+                <div class="wrapper-vertical">
+                    <div id="advanced-text-wrapper">
+                        <p id="advanced-text" class="text-font-slideshow">
+                        Для самых любопытных знатоков языка иврит <br> <br>
+                            <a href="" class="slide-link">Узнайте больше</a>
+                    </p></div>
+                </div>
+                <div id="advanced-img" class="slideshow-element-left" ></div>
+            </div>
+            <div id="children" class="slideshow-element-wrapper wrapper-horizontal-center" >
+                <div id="children-img" class="slideshow-element-right" ></div>
+                <div class="wrapper-vertical">
+                <div id="children-text-wrapper"><p id="children-text" class="text-font-slideshow">
+                    Для самых юных или ярых фанатов языка иврит <br> <br>
+                    <a href="" class="slide-link">Узнайте больше</a>
+                </p></div>
+                </div>
+            </div>
+            <div id="single" class="slideshow-element-wrapper wrapper-horizontal-center" >
+                <div class="wrapper-vertical">
+                    <div id="single-text-wrapper"><p id="single-text" class="text-font-slideshow">
+                        Для любителей самостоятельных свершений в изучении языков <br> <br>
+                        <a href="" class="slide-link">Узнайте больше</a>
+                    </p></div>
+                </div>
+                <div id="single-img" class="slideshow-element-left"></div>
+            </div>
+            <div id="travel" class="slideshow-element-wrapper wrapper-horizontal-center" >
+                <div id="travel-img" class="slideshow-element-left" ></div>
+                <div class="wrapper-vertical">
+                <div id="travel-text-wrapper"><p id="travel-text" class="text-font-slideshow">
+                    Для тех, кто едет в Израиль и не хочет чувствовать себя чужим в Стране <br> <br>
+                    <a href="" class="slide-link">Узнайте больше</a>
+                </p></div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="line">
+        </div>
+        <div class="footer footer_wrapper">
+            <div class="wrapper-horizontal-start">
+                <div class="social footer-padding-top">
                     <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
                     <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
                     <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
                     <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
                 </div>
-                <div class="login-wrapper">
-                    <a href="#" class="login-icon"></a>
-                    <a href="#" class="link-font login">Регистрация / вход</a>
+                <div class="wrapper-horizontal-mail-footer">
+                    <a href="#" class="mail-image-link"></a>
+                    <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
                 </div>
             </div>
         </div>
-        <nav class="menu">
-            <ul class="menu">
-                <li class="menu"><a href = "#" class="menu">Главная</a></li>
-                <li class="menu"><a href = "#" class="menu">Новости</a></li>
-                <li class="menu"><a href = "#" class="menu">Учебники</a>
-                    <ul class="submenu">
-                        <li class="submenu"><a href = "#" class="submenu">Начинающим</a></li>
-                        <li class="submenu"><a href = "#" class="submenu">Продвинутым</a></li>
-                        <li class="submenu"><a href = "#" class="submenu">Детям</a></li>
-                        <li class="submenu"><a href = "#" class="submenu">Самостоятельным</a></li>
-                        <li class="submenu"><a href = "#" class="submenu">Путешественникам</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<section>
-    <nav id="sidebar-menu">
-        <ul>
-            <li>
-                <a id="scrollup"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
-            </li>
-            <li>
-                <a id="scrolldown"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
-            </li>
-        </ul>
-    </nav>
-    <div class="wrapper-vertical-full-screen">
-       <div class="about">
-        <h1 class="about"><b>Иврит 110</b> - ваш путеводитель в мире иврита</h1>
-       </div>
-        <div id="beginner" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <div id="beginner-img" class="slideshow-element-left" ></div>
-            <div class="wrapper-vertical">
-                <div id="beginner-text-wrapper">
-                    <p id="beginner-text" class="text-font-slideshow">
-                        Для начинающих изучение языка иврит <br> <br>
-                        <a href="" class="slide-link">Узнайте больше</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="advanced" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <div class="wrapper-vertical">
-                <div id="advanced-text-wrapper">
-                    <p id="advanced-text" class="text-font-slideshow">
-                    Для самых любопытных знатоков языка иврит <br> <br>
-                        <a href="" class="slide-link">Узнайте больше</a>
-                </p></div>
-            </div>
-            <div id="advanced-img" class="slideshow-element-left" ></div>
-        </div>
-        <div id="children" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <div id="children-img" class="slideshow-element-right" ></div>
-            <div class="wrapper-vertical">
-            <div id="children-text-wrapper"><p id="children-text" class="text-font-slideshow">
-                Для самых юных или ярых фанатов языка иврит <br> <br>
-                <a href="" class="slide-link">Узнайте больше</a>
-            </p></div>
-            </div>
-        </div>
-        <div id="single" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <div class="wrapper-vertical">
-                <div id="single-text-wrapper"><p id="single-text" class="text-font-slideshow">
-                    Для любителей самостоятельных свершений в изучении языков <br> <br>
-                    <a href="" class="slide-link">Узнайте больше</a>
-                </p></div>
-            </div>
-            <div id="single-img" class="slideshow-element-left"></div>
-        </div>
-        <div id="travel" class="slideshow-element-wrapper wrapper-horizontal-center" >
-            <div id="travel-img" class="slideshow-element-left" ></div>
-            <div class="wrapper-vertical">
-            <div id="travel-text-wrapper"><p id="travel-text" class="text-font-slideshow">
-                Для тех, кто едет в Израиль и не хочет чувствовать себя чужим в Стране <br> <br>
-                <a href="" class="slide-link">Узнайте больше</a>
-            </p></div>
-        </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="line">
-    </div>
-    <div class="footer footer_wrapper">
-        <div class="wrapper-horizontal-start">
-            <div class="social footer-padding-top">
-                <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
-                <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
-                <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
-                <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
-            </div>
-            <div class="wrapper-horizontal-mail-footer">
-                <a href="#" class="mail-image-link"></a>
-                <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
     <script src="js/jQuery.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/modalform.js"></script>
 </body>
 </html>

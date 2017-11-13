@@ -8,41 +8,55 @@
 <body>
 <header>
     <div class="header">
-    <div class="wrapper-horizontal">
-        <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
-        <div class="wrapper-horizontal-mail">
-            <a href="#" class="mail-image-link"></a>
-            <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
-        </div>
-        <div class="wrapper-vertical">
-            <div class="social">
-                <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
-                <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
-                <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
-                <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
+        <div class="wrapper-horizontal">
+            <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
+            <div class="wrapper-horizontal-mail">
+                <a href="#" class="mail-image-link"></a>
+                <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
             </div>
-            <div class="login-wrapper">
-                <a href="#" class="login-icon"></a>
-                <a href="#" class="link-font login">Регистрация / вход</a>
+            <div class="wrapper-vertical">
+                <div class="social">
+                    <a href="https://www.facebook.com/groups/ivrit110/" class="social social-fb"></a>
+                    <a href="https://vk.com/ivrit110com" class="social social-vk"></a>
+                    <a href="https://ok.ru/group/42918900728009" class="social social-ok"></a>
+                    <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
+                </div>
+                <div class="login-wrapper">
+                    <a href="#" id="login-form-icon" class="login-icon"></a>
+                    <a href="#" id="login-form" class="link-font login">Регистрация / вход</a>
+                </div>
             </div>
         </div>
+        <nav class="menu">
+            <ul class="menu">
+                <li class="menu"><a href = "#" class="menu">Главная</a></li>
+                <li class="menu"><a href = "#" class="menu">Новости</a></li>
+                <li class="menu"><a href = "#" class="menu">Учебники</a>
+                    <ul class="submenu">
+                        <li class="submenu"><a href = "#" class="submenu">Начинающим</a></li>
+                        <li class="submenu"><a href = "#" class="submenu">Продвинутым</a></li>
+                        <li class="submenu"><a href = "#" class="submenu">Детям</a></li>
+                        <li class="submenu"><a href = "#" class="submenu">Самостоятельным</a></li>
+                        <li class="submenu"><a href = "#" class="submenu">Путешественникам</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <nav class="menu">
-        <ul class="menu">
-            <li class="menu"><a href = "#" class="menu">Главная</a></li>
-            <li class="menu"><a href = "#" class="menu">Новости</a></li>
-            <li class="menu"><a href = "#" class="menu">Учебники</a>
-                <ul class="submenu">
-                    <li class="submenu"><a href = "#" class="submenu">Начинающим</a></li>
-                    <li class="submenu"><a href = "#" class="submenu">Продвинутым</a></li>
-                    <li class="submenu"><a href = "#" class="submenu">Детям</a></li>
-                    <li class="submenu"><a href = "#" class="submenu">Самостоятельным</a></li>
-                    <li class="submenu"><a href = "#" class="submenu">Путешественникам</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <div class="modal_form">
+        <span class="modal_close modal_form_element"></span>
+        <span class="modal_header">Вход</span>
+        <form id="login" name="login" class="login-form modal_form_element">
+            <label class="input-label">Логин</label>
+            <input id="login-input" type="text" class="text-input" name="login-input">
+            <span id="login-validation-msg" class="validation-msg"></span>
+            <label class="input-label">Пароль</label>
+            <input id="password-input" type="password" class="text-input" name="password-input">
+            <span id="password-validation-msg" class="validation-msg"></span>
+            <button id="login-action" class="form-button">Войти</button>
+        </form>
     </div>
+    <div id="overlay"></div>
 </header>
 <section>
     <div class="wrapper-vertical-full-screen">
@@ -166,7 +180,7 @@
     </div>
 </section>
 <footer>
-    <div class="line">
+    <div class="line"></div>
     <div class="footer_wrapper">
         <div class="wrapper-horizontal-start ">
             <div class="social footer-padding-top">
@@ -182,5 +196,7 @@
         </div>
     </div>
 </footer>
+<script src="js/jQuery.js"></script>
+<script src="js/modalform.js"></script>
 </body>
 </html>
