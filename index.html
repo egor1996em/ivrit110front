@@ -13,8 +13,8 @@
             <div class="wrapper-horizontal">
                 <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
                 <div class="wrapper-horizontal-mail">
-                    <a href="#" class="mail-image-link"></a>
-                    <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+                    <span href="#" class="mail-image-link"></span>
+                    <span href="#" class="font"><address class="mail-text" >ivrit110@gmail.com</address></span>
                 </div>
                 <div class="wrapper-vertical">
                     <div class="social">
@@ -50,12 +50,12 @@
             <span class="modal_header">Вход</span>
             <form id="login" name="login" class="login-form modal_form_element">
                 <label class="input-label">Логин</label>
-                <input id="login-input" type="text" class="text-input" name="login-input">
+                <input id="login-input" type="text" class="text-input" name="login_input">
                 <span id="login-validation-msg" class="validation-msg"></span>
                 <label class="input-label">Пароль</label>
-                <input id="password-input" type="password" class="text-input" name="password-input">
+                <input id="password-input" type="password" class="text-input" name="password_input">
                 <span id="password-validation-msg" class="validation-msg"></span>
-                <button id="login-action" class="form-button">Войти</button>
+                <input type="submit" value="Войти" id="login-action" class="form-button">
             </form>
         </div>
         <div id="overlay"></div>
@@ -137,14 +137,15 @@
                     <a href="http://ivrit110.livejournal.com/" class="social social-jj"></a>
                 </div>
                 <div class="wrapper-horizontal-mail-footer">
-                    <a href="#" class="mail-image-link"></a>
-                    <a href="#" class="link-font"><address class="mail-text" >ivrit110@gmail.com</address></a>
+                    <span href="#" class="mail-image-link"></span>
+                    <span href="#" class="font"><address class="mail-text" >ivrit110@gmail.com</address></span>
                 </div>
             </div>
         </div>
     </footer>
     <script src="js/jQuery.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/modalform.js"></script>
 </body>
 </html>

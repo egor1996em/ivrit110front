@@ -30,4 +30,30 @@ $(document).ready(function (event) {
         });
     });
 
+    $('#login').validate({
+        submitHandler: function(form) {
+            // do other things for a valid form
+            form.submit();
+        },
+
+        rules:{
+            login_input:{
+                required: true
+            },
+
+            password_input:{
+                required: true
+            }
+        },
+
+        messages: {
+            login_input: {
+                required: '<span class="validation-msg">Необходимо указать имя пользователя</span>'
+            },
+            password_input:{
+                required: '<span class="validation-msg">Необходимо ввести пароль</span>',
+            }
+        }
+    });
+
 });

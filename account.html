@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IVRIT110 - Регистрация</title>
+    <title>IVRIT110 - Мой кабинет</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidemenu.css">
+    <link rel="stylesheet" href="font-awesome.css">
 </head>
 <body>
 <header>
@@ -58,57 +60,24 @@
     </div>
     <div id="overlay"></div>
 </header>
-    <section>
-        <div class="wrapper-vertical">
-            <h1 class="header-font page-title-align-center">Регистрация</h1>
-            <div class="wrapper-horizontal-start registration">
-                    <form id="registration-form">
-                        <label class="input-label">Имя пользователя:</label>
-                        <input type="text" name="login_field" id="login-field" class="text-input"><br>
-
-                        <label class="input-label">Пароль:</label>
-                        <input type="password" name="password_field" id="password-field" class="text-input"><br>
-                        <span id="password-field-validation-msg" class="validation-msg"></span>
-
-                        <label class="input-label">Повторите праоль:</label>
-                        <input type="password" name="repeat_passport_field" id="repeat-passport-field" class="text-input"><br>
-                        <span id="repeat-passport-validation-msg" class="validation-msg"></span>
-
-                        <label class="input-label">Электронная почта:</label>
-                        <input type="email" name="mail_field" id="mail_field" class="text-input"><br>
-                        <span id="mail-validation-msg" class="validation-msg"></span>
-
-                        <input id="Registration-action" type="submit" value="Зарегистрироваться" class="form-button">
-                    </form>
-                    <div class="hints">
-                            <div class="hint-container">
-                                <p class="hint-text">
-                                    В имени могут содержаться:
-                                            <ul>
-                                                <li class="hint-text">Латинские буквы (A-Z, a-z)</li>
-                                                <li class="hint-text">Цифры (1-0)</li>
-                                                <li class="hint-text">Специальные символы (~!#$%)</li>
-                                            </ul>
-                                </p>
-                        </div>
-                        <div class="hint-container">
-                            <p class="hint-text">
-                            <ol>
-                                <li class="hint-text">Пароль должен быть не меньше 8 символов</li>
-                                <li class="hint-text">Пароль должен содержать:
-                                    <ul>
-                                        <li class="hint-text">Латинские буквы (A-Z, a-z)</li>
-                                        <li class="hint-text">Цифры (1-0)</li>
-                                        <li class="hint-text">Специальные символы (~!#$%)</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                            </p>
-                        </div>
-                    </div>
-            </div>
+<section>
+    <div class="wrapper-horizontal-start account-wrapper">
+        <div class="account-menu">
+            <nav class="vertical-menu">
+                <ul class="vertical-menu">
+                    <li id="profile" class="vertical-menu"><a href = "#" class="vertical-menu">Мой профиль</a></li>
+                    <li id="data" class="vertical-menu"><a href = "#" class="vertical-menu">Изменить данные</a></li>
+                    <li id="courses" class="vertical-menu"><a href = "#" class="vertical-menu">Мои курсы</a></li>
+                    <li id="exit" class="vertical-menu"><a href = "#" class="vertical-menu">Выход</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+        <div class="account-workspace">
+            <h1 id="partial_name" class="header-font account-title-align-center">Мой профиль</h1>
+            <div class="account-workspace-tbl"></div>
+        </div>
+    </div>
+</section>
 <footer>
     <div class="line">
     </div>
@@ -127,9 +96,9 @@
         </div>
     </div>
 </footer>
-    <script src="js/jQuery.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="js/registrationformvalidation.js"></script>
-    <script src="js/modalform.js"></script>
+<script src="js/jQuery.js"></script>
+<script src="js/modalform.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/account.js"></script>
 </body>
 </html>
