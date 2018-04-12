@@ -46,7 +46,7 @@ body {
 .header-font {
     font-family: 'Arial', sans-serif ;
     color: #003BA7;
-    font-size: 2.7vw;
+    font-size: 2.2vw;
     font-style: normal;
 }
 
@@ -82,6 +82,20 @@ body {
     align-content: space-around;
     -webkit-align-content: space-around;
     align-items: flex-end;
+    padding: 1% 0.5% 0 0.5%;
+}
+
+.wrapper-horizontal-wrap{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-direction: row;
+    align-content: space-around;
+    -webkit-align-content: space-around;
+    align-items: flex-end;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
     padding: 1% 0.5% 0 0.5%;
 }
 
@@ -336,6 +350,7 @@ a.logo {
 
 img.logo {
     width: 100%;
+	max-width: 240px;
 }
 
 /*Login*/
@@ -370,7 +385,7 @@ a.login {
 
 
 .line {
-    width: 100%;
+    width: 99%;
     height: 0.75vh;
     background: #0b14a7;
 }
@@ -582,8 +597,9 @@ img.slideshow-element-right {
 }
 
 .news-cell {
-    width: 40%;
-    max-width: 435px;
+    width: 15%;
+    max-width: 300px;
+	min-width: 250px;
 }
 
 .page-title-align-center {
@@ -604,8 +620,8 @@ img.slideshow-element-right {
 
 .checkbox-custom {
     position: relative;
-    width: 2%;
-    height: 4vh;
+    width: 2vw;
+    height: 2vw;
     border: 2px solid #003BA7;
     border-radius: 6px;
 }
@@ -671,14 +687,14 @@ span.label {
 /*news content*/
 
 div.news-block {
-    width: 85%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     -ms-flex-direction: column;
     justify-content: center;
     align-items: center;
     border: solid 0.06em #353535;
-    padding: 3% 5% 3% 5%;
+    padding: 3%;
     margin-top: 7%;
     margin-bottom: 4%;
     box-shadow: 0 0 0 #353535 ;
@@ -696,15 +712,15 @@ div.news-block:hover{
 a.news-block-header {
     font-family: 'Arial', sans-serif ;
     color: black;
-    font-size: 1.4em;
+    font-size: 1.2vw;
     font-style: normal;
     text-decoration: none;
 }
 
 h3.news-block-description {
     font-family: 'Droid Sans', sans-serif ;
-    color: #231F20;
-    font-size: 1.2em;
+    color: #5E5E5E;
+    font-size: 1vw;
     font-style: normal;
     margin-top: 8%;
     text-align: left;
@@ -718,9 +734,9 @@ a.news-block-link {
     width: 100%;
     font-family: 'Droid Sans', sans-serif ;
     color: #003BA7;
-    font-size: 1.1em;
+    font-size: 0.9vw;
     font-style: normal;
-    margin-top: 5%;
+    margin-top: 6%;
     margin-bottom: 5%;
     text-decoration: none;
     text-align: right;
@@ -759,13 +775,14 @@ img.news-block-image-stub {
     padding-left: 12%;
     margin-top: 1%;
     margin-bottom: 4%;
+	margin-left: 3%;
     width: 88%;
 }
 
 a.news-block-tag {
     font-family: 'Droid Sans', sans-serif ;
     color: #003BA7;
-    font-size: 1.1em;
+    font-size: 1vw;
     font-style: normal;
     text-align: left;
     text-decoration: none;
@@ -777,10 +794,11 @@ a.news-block-tag:hover {
 
 .news-block-time {
     width:100%;
+	opacity: 0.9;
     text-align: left;
     font-family: 'Droid Sans', sans-serif ;
-    color: #0760E0;
-    font-size: 0.93em;
+    color: #003BA7;
+    font-size: 0.85vw;
     font-style: normal;
     margin-top: 3vh;
 }
