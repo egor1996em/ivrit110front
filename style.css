@@ -88,8 +88,8 @@ body {
 .wrapper-horizontal-wrap{
     display: flex;
     display: -webkit-flex;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
     flex-direction: row;
     align-content: space-around;
     -webkit-align-content: space-around;
@@ -599,7 +599,8 @@ img.slideshow-element-right {
 .news-cell {
     width: 15%;
     max-width: 300px;
-	min-width: 250px;
+    min-width: 250px;
+    padding-right: 2vw;
 }
 
 .page-title-align-center {
